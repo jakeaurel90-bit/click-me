@@ -22,25 +22,29 @@
         }
 
         .halo {
-            width: 120px;
-            height: 120px;
+            width: 140px;
+            height: 140px;
             border: 5px solid #ffffff;
             border-radius: 50%;
             position: absolute;
-            top: -20px;
+            top: -15px;
             left: 50%;
             transform: translateX(-50%);
             box-shadow: 0 0 20px rgba(255,255,255,0.8);
             animation: glow 2s infinite alternate;
         }
 
-        .bunny-wrapper {
+        .image-wrapper {
             position: relative;
             display: inline-block;
         }
 
-        .bunny {
-            font-size: 120px;
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
             animation: float 2s ease-in-out infinite;
         }
 
@@ -78,9 +82,12 @@
 <body>
 
     <div class="container">
-        <div class="bunny-wrapper">
+        <div class="image-wrapper">
             <div class="halo"></div>
-            <div class="bunny">🐰</div>
+
+            <!-- YOUR IMAGE -->
+            <img src="boy.jpeg" class="profile-img" alt="Boy Image">
+
         </div>
 
         <div class="greeting">
